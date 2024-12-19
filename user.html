@@ -1,0 +1,139 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internet Cafe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="scipt.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <!-- Content for the navbar goes here -->
+             <div class="nav-logo border">
+                <div class="logo"></div>
+             </div>
+             <div class="nav-address border">
+                <p class="add-first">Serve to</p>
+                <div class="add-icon">
+                    <i class ="fa-solid fa-house"></i>
+
+                    <p class="add-sec"> Cafe</p>
+                </div>
+             </div>
+             <div class="nav-search">
+                <select class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="Search Coffees,Snacks,Books,Pc seats" class="search-input">
+                <div class="search-icon">
+                    <i class="fa-solid fa-search"></i>
+                </div>
+             </div>
+             <div class="nav-signin border" >
+                <p><span>Hello,sign in</span></p>
+                <p class="nav-sec">Account</p>
+             </div>
+             <div class="nav-oders border" >
+                <p><span>Oder</span></p>
+                <p class="nav-sec">& enjoy</p>
+             </div>
+             <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart
+             </div>
+             
+        </div>
+        <div class="panel">
+            <div class="panel-all" id="all-button" onclick="toggleSubmenu()">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="submenu" id="submenu">
+                <a href="#">Coffees</a>
+                <a href="#">Heavy Snacks</a>
+                <a href="#">Light Snacks</a>
+                <a href="#">Books Genre</a>
+                <a href="#">Books Review</a>
+                <a href="#">Pc seats</a>
+            </div>
+            <div class="panel-ops">
+                <p>Today's Offers</p>
+                <p>Our Products</p>
+                <p>Register</p>
+                <p>Gift Cards</p>
+                
+            </div>
+            <div class="auth-buttons">
+                <a href="#" id="login-btn" class="auth-btn">Login</a>
+            <a href="#" id="signup-btn" class="auth-btn">Signup</a>
+            </div>
+            <div id="login-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Login</h2>
+                    <form>
+                        <div class="input-field">
+                            <img src="https://img.icons8.com/ios-glyphs/30/user.png" alt="User Icon">
+                            <input type="text" placeholder="Username" required>
+                        </div>
+                        <div class="input-field">
+                            <img src="https://img.icons8.com/ios-glyphs/30/lock.png" alt="Lock Icon">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <button type="submit" class="auth-btn">Login</button>
+                        <p>Don't have an account? <a href="#" id="signup-link">Sign Up</a></p>
+                    </form>
+                </div>
+            </div>
+        
+            <!-- Signup Form Modal -->
+            <div id="signup-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn">&times;</span>
+                    <h2>Sign Up</h2>
+                    <form>
+                        <div class="input-field">
+                            <img src="https://img.icons8.com/ios-glyphs/30/user.png" alt="User Icon">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="input-field">
+                            <img src="https://img.icons8.com/ios-glyphs/30/phone.png" alt="Phone Icon">
+                            <input type="text" placeholder="Phone Number" required>
+                        </div>
+                        <div class="input-field">
+                            <img src="https://img.icons8.com/ios-glyphs/30/email.png" alt="Email Icon">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="input-field">
+                            <img src="https://img.icons8.com/ios-glyphs/30/address.png" alt="Address Icon">
+                            <input type="text" placeholder="Address" required>
+                        </div>
+                        <div class="input-field">
+                            <img src="https://img.icons8.com/ios-glyphs/30/lock.png" alt="Lock Icon">
+                            <input type="password" placeholder="Password" required>
+                        </div>
+                        <div class="input-field">
+                            <img src="https://img.icons8.com/ios-glyphs/30/gender.png" alt="Gender Icon">
+                            <select required>
+                                <option value="" disabled selected>Gender</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="auth-btn">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        
+         </div>
+    </header>
+    <div class="hero-section"></div>
+    
+</body>
+</html>

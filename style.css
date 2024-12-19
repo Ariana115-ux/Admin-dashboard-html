@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    font-family: Arial;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #622d04;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo {
+    height: 50px;
+    width: 300px;
+}
+
+.logo {
+    background-image: url("coffee-dashboard.jpg");
+    background-size: cover;
+    height: 50px;
+    width:100%;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+/*box2*/
+.add-first{
+    color:rgb(219, 205, 186);
+    font-size: 1rem;
+    margin-left:15px;
+}
+.add-sec{
+    font-size: 1.5rem;
+    margin-left:3px;
+}
+.add-icon{
+    displaY:flex;
+    align-items: center;
+}
+/** box3 **/
+.nav-search{
+    display:flex;
+    justify-content: space-evenly;
+    background-color:#fdbe8e;
+    width:600px;
+    height:40px;
+    border-radius: 10px;
+}
+.search-select{
+    background-color: bisque;
+    width:50px;
+    text-align:center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border:none;
+}
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border:none;
+}
+.search-icon{
+    width:45px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color:#622d04;
+}
+.nav-search:hover {
+    border:2px solid #fde152;
+}
+/** box4 **/
+span{
+    font-size: .9rem;
+}
+.nav-sec{
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+.nav-cart i{
+   font-size:30px;
+
+}
+.nav-card{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+/** panel **/
+.panel{
+    height: 40px;
+   
+    background-color: #f1ca8f;
+    display: flex;
+    color:#622d04;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+.panel-ops p{
+    display: inline;
+    margin-left: 15px ;
+
+}
+.panel-ops{
+    width:70%;
+    font-size: 0.85rem;
+}
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    height: 60px;
+    background-color: #552406;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-logo, .nav-address, .nav-search, .nav-signin, .nav-orders, .nav-cart {
+    margin-right: 20px;
+}
+
+/* Panel Styling */
+.panel {
+    display: flex;
+    align-items: center;
+    background-color: #f2c182;
+    padding: 10px;
+}
+
+.panel-all {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+.panel-ops p {
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+/* Submenu Styling */
+.submenu {
+    display: none;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    position: absolute;
+    top: 100%; /* Place below the "All" button */
+    left: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submenu a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 5px 0;
+}
+
+.submenu a:hover {
+    background-color: #ddd;
+    border-radius: 5px;
+}
+/** hero section **/
+.hero-section{
+    background-image: url(bc.jpg);
+    background-size:cover;
+    height: 600px;
+}
+.auth-btn {
+    padding: 10px 20px;
+    background-color: #eecc99;
+    color: rgb(128, 58, 4);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.auth-btn:hover {
+    background-color: #d1881a;
+}
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 300px;
+    
+    background-color: rgb(232, 196, 156);
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease;
+   
+}
+
+.modal-content {
+    padding: 20px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ddd;
+    gap: 10px;
+    width: 100%;
+    font-size: 30px;
+  
+
+}
+
+.input-field img {
+    margin-right: 2px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    
+}
